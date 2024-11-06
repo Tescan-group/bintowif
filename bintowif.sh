@@ -22,8 +22,6 @@ encode_base58() {
 read -p "Enter the prefix (in hex, e.g., '80' for mainnet): " prefix
 read -p "Enter the binary key: " binary_key
 
-echo "Enter the Binary: $binary_key"
-
 # Step 1: Convert binary to hexadecimal
 hex_key=$(binary_to_hex "$binary_key")
 echo "Hexadecimal key: $hex_key"
